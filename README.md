@@ -96,9 +96,8 @@ The GUI also allows for calculating metrics over the predicted structures. For m
 ## Final Notes
 
 1. A GPU-equipped computer is strongly recommended for faster analysis.
-2. Use 8-bit images to avoid display issues.
-3. The files `train_neurons_mitochondria_unet_segmentation.py` are provided for re-training the multiclass segmentation model (neurons and mitochondria) or uniclass segmentation model (only neurons or mitochondria) with your own data.
-4. The algorithm performs well on images with resolution of 25 nm neuron and mitochondria segmentation and 5 nm for vesicle detection.
+2. The files `train_neurons_mitochondria_unet_segmentation.py` are provided for re-training the multiclass segmentation model (neurons and mitochondria) or uniclass segmentation model (only neurons or mitochondria) with your own data.
+3. The algorithm performs well on images with resolution of 25 nm neuron and mitochondria segmentation and 5 nm for vesicle detection.
 
 ---
 
