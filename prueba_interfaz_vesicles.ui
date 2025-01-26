@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>996</width>
+    <height>614</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4" stretch="2,1,60,2">
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,100">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_dimension">
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="4,1">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="10">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="styleSheet">
+           <string notr="true">border: &quot;black&quot;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="ImageView" name="image_widget" native="true"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3" stretch="3,2,2">
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_5" stretch="2,2,2,2,2">
+           <item>
+            <widget class="QLabel" name="label_coordenadas">
+             <property name="styleSheet">
+              <string notr="true">color: &quot;white&quot;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_value">
+             <property name="styleSheet">
+              <string notr="true">color: &quot;white&quot;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_tool">
+             <property name="styleSheet">
+              <string notr="true">color: &quot;white&quot;</string>
+             </property>
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_mitocondria">
+             <property name="styleSheet">
+              <string notr="true">color: &quot;white&quot;</string>
+             </property>
+             <property name="text">
+              <string>label_mitocondrias</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_vesicula">
+             <property name="styleSheet">
+              <string notr="true">color: &quot;white&quot;</string>
+             </property>
+             <property name="text">
+              <string>label_veisculas</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QCheckBox" name="checkBox_neurons">
+             <property name="styleSheet">
+              <string notr="true">color: &quot;white&quot;</string>
+             </property>
+             <property name="text">
+              <string>Neurons</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_mito">
+             <property name="styleSheet">
+              <string notr="true">color: &quot;white&quot;</string>
+             </property>
+             <property name="text">
+              <string>Mitochondria</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_center_ves">
+             <property name="styleSheet">
+              <string notr="true">color: &quot;white&quot;</string>
+             </property>
+             <property name="text">
+              <string>Vesicle center</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_area_ves">
+             <property name="styleSheet">
+              <string notr="true">color: &quot;white&quot;</string>
+             </property>
+             <property name="text">
+              <string>Vesicle area</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="metrics_button">
+          <property name="text">
+           <string>Metrics</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>996</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuPredict">
+    <property name="title">
+     <string>Predict</string>
+    </property>
+    <addaction name="actionMitochondria"/>
+    <addaction name="actionVesicles"/>
+    <addaction name="actionNeurons"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <widget class="QMenu" name="menuLabel">
+     <property name="title">
+      <string>Label</string>
+     </property>
+     <addaction name="actionMitochondria_Label"/>
+     <addaction name="actionVesicles_Label"/>
+    </widget>
+    <widget class="QMenu" name="menuAdd">
+     <property name="title">
+      <string>Add</string>
+     </property>
+     <addaction name="actionMitochondria_Add"/>
+     <addaction name="actionVesicles_Add"/>
+     <addaction name="actionFinish_Add"/>
+    </widget>
+    <widget class="QMenu" name="menuDelete">
+     <property name="title">
+      <string>Delete</string>
+     </property>
+     <addaction name="actionMitochondria_Delete"/>
+     <addaction name="actionVesicles_Delete"/>
+     <addaction name="actionFinish_Delete"/>
+    </widget>
+    <widget class="QMenu" name="menuUndo">
+     <property name="title">
+      <string>Undo</string>
+     </property>
+     <addaction name="actionMitochondria_Undo"/>
+     <addaction name="actionVesicle_Undo"/>
+    </widget>
+    <addaction name="menuLabel"/>
+    <addaction name="menuAdd"/>
+    <addaction name="menuDelete"/>
+    <addaction name="menuUndo"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuPredict"/>
+   <addaction name="menuTools"/>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionMitochondria">
+   <property name="text">
+    <string>Mitochondria</string>
+   </property>
+  </action>
+  <action name="actionVesicles">
+   <property name="text">
+    <string>Vesicles</string>
+   </property>
+  </action>
+  <action name="actionMitochondria_Label">
+   <property name="text">
+    <string>Mitochondria</string>
+   </property>
+  </action>
+  <action name="actionVesicles_Label">
+   <property name="text">
+    <string>Vesicles</string>
+   </property>
+  </action>
+  <action name="actionMitochondria_Add">
+   <property name="text">
+    <string>Mitochondria</string>
+   </property>
+  </action>
+  <action name="actionVesicles_Add">
+   <property name="text">
+    <string>Vesicle</string>
+   </property>
+  </action>
+  <action name="actionMitochondria_Delete">
+   <property name="text">
+    <string>Mitochondria</string>
+   </property>
+  </action>
+  <action name="actionVesicles_Delete">
+   <property name="text">
+    <string>Vesicle</string>
+   </property>
+  </action>
+  <action name="actionFinish_Add">
+   <property name="text">
+    <string>Finish</string>
+   </property>
+  </action>
+  <action name="actionMitochondria_Undo">
+   <property name="text">
+    <string>Mitochondria</string>
+   </property>
+  </action>
+  <action name="actionVesicle_Undo">
+   <property name="text">
+    <string>Vesicle</string>
+   </property>
+  </action>
+  <action name="actionNeurons">
+   <property name="text">
+    <string>Neurons</string>
+   </property>
+  </action>
+  <action name="actionFinish_Delete">
+   <property name="text">
+    <string>Finish</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImageView</class>
+   <extends>QWidget</extends>
+   <header>pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
