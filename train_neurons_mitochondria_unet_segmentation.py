@@ -199,7 +199,7 @@ unet_model.compile(optimizer='adam', loss=BinaryFocalLoss(gamma=2), metrics=['ac
 print(unet_model.summary())
 
 start1 = datetime.now() 
-unet_history = unet_model.fit(X_train, y_train_cat, verbose=1,batch_size = batch_size,validation_data=(X_test, y_test_cat), shuffle=False, epochs=50)
+unet_history = unet_model.fit(X_train, y_train_cat, verbose=1,batch_size = batch_size,validation_data=(X_test, y_test_cat), shuffle=False, epochs=50) #use y_train and y_test if uniclass
 
 stop1 = datetime.now()
 #Execution time of the model 
@@ -218,7 +218,7 @@ att_unet_model.compile(optimizer='adam', loss=BinaryFocalLoss(gamma=2), metrics=
 
 print(att_unet_model.summary())
 start2 = datetime.now() 
-att_unet_history = att_unet_model.fit(X_train, y_train, verbose=1, batch_size = batch_size, validation_data=(X_test, y_test), shuffle=False,epochs=50)
+att_unet_history = att_unet_model.fit(X_train, y_train_cat, verbose=1, batch_size = batch_size, validation_data=(X_test, y_test_cat), shuffle=False,epochs=50) #use y_train and y_test if uniclass
 stop2 = datetime.now()
 #Execution time of the model 
 execution_time_Att_Unet = stop2-start2
@@ -242,10 +242,10 @@ print(att_res_unet_model.summary())
 
 
 start3 = datetime.now() 
-att_res_unet_history = att_res_unet_model.fit(X_train, y_train, #aca cambiar a y_train_cat y y_test_cat si es multiclass 
+att_res_unet_history = att_res_unet_model.fit(X_train, y_train_cat, #change to y_train and y_test if uniclass
                     verbose=1,
                     batch_size = batch_size,
-                    validation_data=(X_test, y_test ), 
+                    validation_data=(X_test, y_test_cat ), 
                     shuffle=False,
                     epochs=50)
 stop3 = datetime.now()
