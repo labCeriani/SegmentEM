@@ -1,7 +1,7 @@
 # SegmentEM
 
 The project includes a graphical user interface (GUI) tool designed for segmenting and analyzing neurons of interest in the circadian clock from electron microscopy images.
-
+This repository is part of the research described in doi: https://doi.org/10.1101/2024.11.06.622332
 ---
 
 ## Prerequisites
